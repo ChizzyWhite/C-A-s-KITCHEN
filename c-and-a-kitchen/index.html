@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&A's Kitchen | Delicious Meals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">C&A's Kitchen</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Good Food. Great Taste.</h1>
+            <p>Welcome to C&A's Kitchen — delicious meals prepared with love and served fresh.</p>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p class="section-description">Choose from some of our delicious meals.</p>
+
+        <div class="menu-container">
+            <div class="food-card">
+                <h3>Jollof Rice</h3>
+                <p>Delicious Nigerian-style jollof rice.</p>
+                <strong>₦3,000</strong>
+                <button onclick="addToCart('Jollof Rice')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <h3>Fried Rice & Chicken</h3>
+                <p>Fried rice served with crispy chicken.</p>
+                <strong>₦4,500</strong>
+                <button onclick="addToCart('Fried Rice & Chicken')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <h3>Chicken & Chips</h3>
+                <p>Crispy chicken served with golden chips.</p>
+                <strong>₦4,000</strong>
+                <button onclick="addToCart('Chicken & Chips')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <h3>Egusi Soup & Swallow</h3>
+                <p>Rich Nigerian egusi soup with your choice of swallow.</p>
+                <strong>₦4,000</strong>
+                <button onclick="addToCart('Egusi Soup & Swallow')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About C&A's Kitchen</h2>
+        <p>C&A's Kitchen is a food business focused on providing tasty, affordable and freshly prepared meals.</p>
+        <p>Our goal is simple — good food, excellent service and happy customers.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>📧 Email: candaskitchen@example.com</p>
+            <p>📞 Phone: +234 800 000 0000</p>
+            <p>📍 Location: Bayelsa State, Nigeria</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 C&A's Kitchen. All Rights Reserved.</p>
+        <p>Cloud Engineering Practice Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
