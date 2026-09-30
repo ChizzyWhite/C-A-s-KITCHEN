@@ -1,0 +1,17 @@
+name: Testing my knowledge 
+on:
+ push:
+  branches: main
+jobs:
+practice:
+ runs-on: ubuntu-latest
+ steps:
+  -name: Step One 
+  run: echo "This is my first step"
+   -name: Step Two
+   run: echo "My second step"
+    -name: Step Three
+    uses: action/checkout@v4
+    
+    
+   
