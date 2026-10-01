@@ -5,18 +5,18 @@ on:
    - main
    
 jobs:
-practice:
- runs-on: ubuntu-latest
+ practice:
+  runs-on: ubuntu-latest
  
- steps:
+  steps:
    - name: Step One 
-      run: echo "This is my first step"
+     run: echo "This is my first step"
   
    - name: Step Two
-      run: echo "My second step"
+     run: echo "My second step"
    
    - name: Step Three
-      uses: action/checkout@v4
+     uses: actions/checkout@v4
     
     
    
