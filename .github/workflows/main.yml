@@ -1,0 +1,33 @@
+name: Testing my knowledge 
+on:
+ push:
+  branches: 
+   - main
+   
+jobs:
+ practice:
+  runs-on: ubuntu-latest
+ 
+  steps:
+   - name: Step One
+     uses: actions/checkout@v4
+
+   - name: Build Docker Image
+     run: docker build -t project-testing .
+     
+   - name: Tag docker image
+     run:  docker tag project-testing ${{ secrets DOCKERHUB_USERNAME }} project-testing:latest
+     
+   - name: log in to Docker Hub
+     run: docker/login-action/checkout@v4  
+     with:
+      username: ${{ secrets.DOCKERHUB_USERNAME }}
+      password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: push docker image
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME}}/project.testing:latest
+   
+
+    
+    
+    
+   
